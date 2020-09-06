@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let quote = 'I dO nOT lIke gREen eGgS anD HAM';
+
+// Add your code here
+
+function lowerCase(sentence){
+    let exceptFirstLetter = sentence.slice(1);
+    let changes = exceptFirstLetter.toLowerCase();
+return sentence = sentence[0] + changes;
+
+}
+
+let afterFix = lowerCase(quote);
+let fixedQuote = afterFix.replace( "green eggs and ham", "babi");
+let finalQuote =  fixedQuote + ".";
+
+// edit DOM
+
+section.innerHTML = ' ';
+let para1 = document.createElement('p');
+para1.textContent = fixedQuote;
+let para2 = document.createElement('p');
+para2.textContent = finalQuote;
+
+section.appendChild(para1);
+section.appendChild(para2);
+    </script>
+</html>
